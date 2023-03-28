@@ -3,7 +3,6 @@ const {
     BrowserWindow,
     Tray,
     Menu,
-    dialog,
     globalShortcut,
 } = require('electron');
 const sharp = require('sharp');
@@ -13,6 +12,14 @@ const localShortcut = require('electron-localshortcut');
 let mainWindow;
 let windowPosition = null;
 let tray;
+
+function toggleWindow() {
+    if (mainWindow.isVisible()) {
+        mainWindow.hide();
+    } else {
+        mainWindow.show();
+    }
+}
 
 function createWindow() {
     mainWindow = new BrowserWindow({
@@ -28,6 +35,7 @@ function createWindow() {
         movable: true,
         resizable: true,
         frame: false,
+        alwaysOnTop: true,
     });
 
     mainWindow.loadURL('https://chat.openai.com');
@@ -120,7 +128,7 @@ app.on('ready', function () {
 
     const showWindowShortcut = 'CmdOrCtrl+Shift+0';
     const ret = globalShortcut.register(showWindowShortcut, () => {
-        mainWindow.show();
+        toggleWindow();
     });
 
     if (!ret) {
