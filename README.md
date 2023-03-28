@@ -41,7 +41,7 @@ To get started, follow these steps:
 
 ### Using a pre-built binary
 
-You can also download a pre-built binary for MacOS from the [releases page]()
+You can also download a pre-built binary for MacOS arm64 from the [releases page](https://github.com/dylanjcastillo/chatgpt-desktop/releases/)
 
 ## Usage
 
