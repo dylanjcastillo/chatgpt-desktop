@@ -2,9 +2,9 @@
 
 ChatGPT Desktop is an Electron-based application that lets you run ChatGPT from your desktop without needing to open a browser tab. Developed by ChatGPT itself\*, this app aims to make your interaction with ChatGPT more convenient.
 
-<sub>\*Not entirely accurate, but almost all of the code, the README, and the release page were directly sourced from ChatGPT with very few modifications.</sub>
-
 Take a look at the [app](https://youtu.be/jw434664OFU).
+
+<sub>\*Not entirely accurate, but almost all of the code, the README, and the release page were directly sourced from ChatGPT with very few modifications.</sub>
 
 ## Features
 
