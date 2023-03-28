@@ -1,0 +1,40 @@
+{
+  "name": "chatgpt-desktop",
+  "version": "1.0.0",
+  "description": "A ChatGPT Desktop App",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dylanjcastillo/chatgpt-desktop/blob/main/LICENSE"
+    }
+  ],
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.yourapp",
+    "productName": "ChatGPT Desktop",
+    "defaultArch": "universal",
+    "mac": {
+      "target": "dmg",
+      "extendInfo": {
+        "LSUIElement": "1"
+      }
+    },
+    "forceCodeSigning": false
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1",
+    "menubar": "^9.3.0",
+    "sharp": "^0.32.0"
+  },
+  "devDependencies": {
+    "electron": "^22.3.4",
+    "electron-builder": "^23.6.0"
+  }
+}
