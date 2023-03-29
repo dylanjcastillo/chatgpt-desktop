@@ -47,7 +47,7 @@ You can also download a pre-built binary for MacOS arm64 from the [releases page
 
 ## Usage
 
-Once the app is running, you can interact with ChatGPT directly from your desktop. To open the app quickly, use the shortcut key `Cmd+Shift+0`.
+Once the app is running, you can interact with ChatGPT directly from your desktop. To open the app quickly, use the shortcut key `Cmd+Shift+0`. You can also hide the app using the same shortcut.
 
 ## Contributing
 
