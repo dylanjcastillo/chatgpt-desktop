@@ -35,6 +35,7 @@ function createWindow() {
         resizable: true,
         frame: false,
         alwaysOnTop: true,
+        skipTaskbar: true,
     });
 
     mainWindow.loadURL('https://chat.openai.com');
