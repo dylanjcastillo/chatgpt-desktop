@@ -5,7 +5,6 @@ const {
     Menu,
     globalShortcut,
 } = require('electron');
-const sharp = require('sharp');
 const path = require('path');
 const localShortcut = require('electron-localshortcut');
 
@@ -124,7 +123,9 @@ app.on('ready', function () {
     createWindow();
     createTray();
 
-    app.dock.hide();
+    if (process.platform === 'darwin') {
+        app.dock.hide();
+    }
 
     const showWindowShortcut = 'CmdOrCtrl+Shift+0';
     const ret = globalShortcut.register(showWindowShortcut, () => {
